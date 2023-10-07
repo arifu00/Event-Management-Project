@@ -15,12 +15,12 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
-          to="/about"
+          to="/ourServices"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold" : ""
           }
         >
-          About
+          Our Services
         </NavLink>
       </li>
     </>

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "category": "Wedding Parties",
+        "img": "https://i.ibb.co/Ns0BMBw/wedding.jpg",
+        "title": "The wedding vows",
+        "price": 1500,
+        "short_detail": "A wedding is a ceremony where two people are united in marriage. Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes.",
+        "long_detail": "Most simply, marriage vows are the promises two people make to each other during a wedding ceremony. These promises can look different across religions, as well as from couple to couple. You’re basically declaring your lifelong commitment to your spouse, witnessed by your loved ones  Vows can be romantic and emotional, of course, but can also be humorous—it all depends on your style and the structure of your ceremony, as determined by your officiant. Vows typically take place after your officiant’s sermon or any religious readings you choose to have. You will generally exchange rings immediately following the vows, with the pronouncement of marriage and the kiss following that. You may be most familiar with the traditional Catholic wedding vows (these are the ones most commonly recited in movies): “I,for my lawful wife/husband, to have and to hold from this day forward, for better, for worse, for richer, for poorer, in sickness and health, until death do us part.”"
+    },
+    {
+        "id": "2",
+        "category": "Birthday Parties",
+        "img": "https://i.ibb.co/vqJ6dBs/birthday.jpg",
+        "title": "One Big Cupcake Party",
+        "price": 50,
+        "short_detail": "A birthday is the anniversary of the birth of a person, or figuratively of an institution. Birthdays of people are celebrated in numerous cultures, often with birthday gifts, birthday cards, a birthday party, or a rite of passage.",
+        "long_detail": "A birthday celebration is occasion for joy, laughter, and connection, and the perfect birthday party invitation kicks all of this off in style. Whether it’s a milestone birthday, a themed or surprise party, or a simple, intimate gathering, crafting the right birthday invitation wording is essential to make your guests feel excited and eager to attend. Read on for the best tips, ideas, and examples to help you create impactful invitations, whether fun or formal, and be sure to explore our wonderful assortment of birthday invitations online. And don’t miss our personalized party supplies, either, from festive bunting banners to hit-of-the-party selfie frames."
+    },
+    {
+        "id": "3",
+        "category": "Anniversaries Parties",
+        "img": "https://i.ibb.co/rM8SDXQ/anniversaries.jpg",
+        "title": "Anniversary Gift",
+        "price": 75,
+        "short_detail": "An anniversary is the date on which an event took place or an institution was founded in a previous year, and may also refer to the commemoration or celebration of that event. The word was first used for Catholic feasts to commemorate saints.",
+        "long_detail": "A wedding anniversary is the anniversary of the date that a wedding took place. Couples often mark the occasion by celebrating their relationship, either privately or with a larger party. Special celebrations and gifts are often given for particular anniversary milestones (e.g., 10, 15, 20, or 25 years). In some cultures, traditional names exist for milestone anniversaries; for instance, fifty years of marriage may be known variously as a golden wedding anniversary, golden anniversary or golden weddin."
+    },
+    {
+        "id": "4",
+        "category": "Engagement Parties",
+        "img": "https://i.ibb.co/vwQTL86/engagement.jpg",
+        "title": "Diamond Engagement Ring",
+        "price": 2000,
+        "short_detail": "An engagement, also known as a betrothal or fiancer, is the period of time between a marriage proposal and the marriage. It also encompasses the relationship of the two partners. The length of an engagement may vary from a very short amount of time to many years, depending on the wishes of the couple.",
+        "long_detail": "A toast to you you just got engaged! Once you’ve had of weeks to let your romantic news sink in and enjoy spending some quality time with your new fiancé/fiancée, it’s time to start thinking about how you might want to celebrate with friends and family. Whether you and your other half are all about dancing and dressing up or the pair of you prefer smaller gatherings, every engaged couple deserves some sort of celebration to honour the special adventure they’re about to begin.Engagement parties are a great way to introduce both sides of the family as well as different friendship groups. Everyone gets to mingle which means your wedding is likely to be much more fun and relaxed. And if you’re having a more formal affair, it’s a good opportunity to plan and organise an event – a practice-run for you big day, let’s say. When it comes to celebrating, there are endless ways to do so. Sunday brunch, a black tie event, BBQ in the garden, cocktails and canapés at your favourite restaurant, a home-cooked meal for your closest friends. Our tip: choose a party invitation that reflects the formality and theme of your event and the time of year it’s taking place. What about the wording? Scroll on for our simple guide to getting your loved ones together in style."
+    },
+    {
+        "id": "5",
+        "category": "Retirement Parties",
+        "img": "https://i.ibb.co/Kz0wTFm/retirement.jpg",
+        "title": "Retirement Plaque",
+        "price": 50,
+        "short_detail": "A retirement party is a great way to honor your legacy, success, and accomplishments throughout the years. At this event, you can pay homage to your career and share your excitement for what the future holds.",
+        "long_detail": "Retirement is the withdrawal from one's position or occupation or from one's active working life. A person may also semi-retire by reducing work hours or workload.Many people choose to retire when they are elderly or incapable of doing their job due to health reasons. People may also retire when they are eligible for private or public pension benefits, although some are forced to retire when bodily conditions no longer allow the person to work any longer (by illness or accident) or as a result of legislation concerning their positions. In most countries, the idea of retirement is of recent origin, being introduced during the late-nineteenth and early-twentieth centuries. Previously, low life expectancy, lack of social security and the absence of pension arrangements meant that most workers continued to work until their death. Germany was the first country to introduce retirement benefits Nowadays, most developed countries have systems to provide pensions on retirement in old age, funded by employers or the state. In many poorer countries, there is no support for the elderly beyond that provided through the family. Today, retirement with a pension is considered a right of the worker in many societies; hard ideological, social, cultural and political battles have been fought over whether this is a right. In many Western countries, this is a right embodied in national constitutions."
+    },
+    {
+        "id": "6",
+        "category": "Baby Shower",
+        "img": "https://i.ibb.co/HDhkZ6P/baby-shower.jpg",
+        "title": "Baby Shower Decorations",
+        "price": 30,
+        "short_detail": "A  baby shower is about friends and family coming together to celebrate the coming of a special new child. Whether you are having a shower for a boy, girl, or gender-neutral party, there are many ways to help share the news about your baby shower.",
+        "long_detail": "A  baby shower is about friends and family coming together to celebrate the coming of a special new child. Whether you are having a shower for a boy, girl, or gender-neutral party, there are many ways to help share the news about your baby shower."
+    }
+]
