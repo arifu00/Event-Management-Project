@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "category": "Photography and VideoGraphy"
+        
+    },
+    {
+        "id": 2,
+        "category": "Photo Session Schedule "
+    },
+    {
+        "id": 3,
+        "category": "Cake Cutting and Candle Blowing "
+    },
+    {
+        "id": 4,
+        "category": " Catering Services"
+    },
+    {
+        "id": 5,
+        "category": "Entertainment Services"
+    },
+    {
+        "id": 6,
+        "category": "Guest List Management"
+    },
+    {
+        "id": 7,
+        "category": "Health and Safety Measures"
+    },
+    {
+        "id": 8,
+        "category": "Specialty Services"
+    }
+]
