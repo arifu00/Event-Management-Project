@@ -62,7 +62,7 @@ const Nav = () => {
         </div>
         <div className="navbar-end">
           <NavLink
-            to="/about"
+            to="/login"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold" : ""
             }
