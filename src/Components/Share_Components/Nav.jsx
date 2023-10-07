@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
   const navLinks = (
     <>
-      <li>
+      <li className="">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold" : ""
+            isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold px-4 py-2 outline rounded-2xl outline-blue-700" : ""
           }
         >
           Home
@@ -17,10 +17,20 @@ const Nav = () => {
         <NavLink
           to="/ourServices"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold" : ""
+            isPending ? "pending" : isActive ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold" : ""
           }
         >
           Our Services
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/contactUs"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold" : ""
+          }
+        >
+          Contact Us
         </NavLink>
       </li>
     </>

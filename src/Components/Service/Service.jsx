@@ -28,7 +28,7 @@ const Service = ({ service }) => {
               </h4>
               <div className="text-right">
                 <Link to={`/services/${id}`}>
-                  <button className="outline outline-pink-500  px-2 py-2 rounded-lg text-sm hover:text-[#EC6F69] font-normal hover:bg-green-200">
+                  <button className="outline outline-pink-500  px-2 py-2 rounded-lg text-sm hover:text-[#fff] font-normal hover:bg-blue-400">
                     More Info
                   </button>
                 </Link>
