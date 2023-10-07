@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import PackageDetail from "./PackageDetail";
 
 const ServiceDetail = () => {
   const [details, setDetails] = useState({});
-  const { img, long_detail, title } = details;
+  const { img, title } = details;
 
   const { id } = useParams();
   // console.log(id);
@@ -15,7 +16,8 @@ const ServiceDetail = () => {
     const findService = serviceDetail.find((service) => service.id === id);
     setDetails(findService);
   }, [id, serviceDetail]);
-  console.log(details);
+  // console.log(details);
+
   return (
     <div>
       <div className="container mx-auto px-5 mt-12 mb-12">
@@ -54,105 +56,7 @@ const ServiceDetail = () => {
                 Our Package
               </h6>
             </div>
-            {/* pack */}
-            <div className="  mt-8  flex flex-wrap items-center  justify-center  ">
-              <div className="flex flex-col sm:flex-col lg:flex-row xl:flex-row md:flex-row justify-center items center  container   ">
-                <div className="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-white z-30">
-                  <h1 className="text-gray-500 font-semibold text-xl ">
-                    Normal
-                  </h1>
-                  <div className="text-center py-4 px-7">
-                    <h1 className="text-gray-700 text-4xl font-black">
-                      $199.00
-                    </h1>
-                  </div>
-                  <div className="h-px bg-gray-200"></div>
-                  <div className="text-center mt-3">
-                    <ul>
-                      <li className="flex items-center gap-4">
-                        <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="2"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                            className="h-3 w-3"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M4.5 12.75l6 6 9-13.5"
-                            ></path>
-                          </svg>
-                        </span>
-                        <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                          5 team members
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <button
-                    className="block mt-4  w-full select-none rounded-lg bg-pink-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
-                    data-ripple-light="true"
-                  >
-                    Book Now
-                  </button>
-                </div>
-                <div className="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-purple-500 transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40  shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl">
-                  <h1 className="text-purple-200 font-semibold text-xl ">
-                    Popular
-                  </h1>
-                  <div className="text-center py-4 px-7">
-                    <h1 className="text-white text-4xl font-black">$399.00</h1>
-                    <p className="text-white text-opacity-50 mt-2"></p>
-                  </div>
-                  <div className="h-px bg-purple-400"></div>
-                  <div className="text-center mt-3">
-                    <p className="text-sm text-white text-opacity-80">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                  </div>
-                  <button
-                    className="block w-full mt-4 select-none rounded-lg bg-pink-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
-                    data-ripple-light="true"
-                  >
-                    Book Now
-                  </button>
-                </div>
-                <div className="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-white z-30">
-                  <h1 className="text-gray-500 font-semibold text-xl ">
-                    Standard
-                  </h1>
-                  <div className="text-center py-4 px-7">
-                    <h1 className="text-gray-700 text-4xl font-black">
-                      $899.00
-                    </h1>
-                    <p className="text-gray-500  mt-2">Monthely</p>
-                  </div>
-                  <div className="h-px bg-gray-200"></div>
-                  <div className="text-center mt-3">
-                    <p className="text-sm text-gray-400">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                  </div>
-                  <button
-                    className="block mt-4 w-full select-none rounded-lg bg-pink-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
-                    data-ripple-light="true"
-                  >
-                    Book Now
-                  </button>
-                </div>
-              </div>
-            </div>
+            <PackageDetail></PackageDetail>
           </div>
           <div className="p-6 pt-3">
             <div className="text-right">
