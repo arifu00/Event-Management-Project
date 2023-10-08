@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Project Manager",
+        "email": "john.doe@example.com",
+        "phone": "+1 (123) 456-7890",
+        "image": "https://i.ibb.co/3CnnxVF/team4.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "Event Planer",
+        "email": "jane.smith@example.com",
+        "phone": "+1 (234) 567-8901",
+        "image": "https://i.ibb.co/9nGq045/team5.jpg"
+    },
+    {
+        "id": 3,
+        "name": "David Johnson",
+        "position": "Event Planer",
+        "email": "david.johnson@example.com",
+        "phone": "+1 (345) 678-9012",
+        "image": "https://i.ibb.co/st8MfT6/team6.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sarah Brown",
+        "position": "Marketing Specialist",
+        "email": "sarah.brown@example.com",
+        "phone": "+1 (456) 789-0123",
+        "image": "https://i.ibb.co/VjpCw8x/team1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Michael Lee",
+        "position": "Decorator",
+        "email": "michael.lee@example.com",
+        "phone": "+1 (567) 890-1234",
+        "image": " https://i.ibb.co/q9TqWqq/team2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Emily Wilson",
+        "position": "HR Manager",
+        "email": "emily.wilson@example.com",
+        "phone": "+1 (678) 901-2345",
+        "image": "https://i.ibb.co/vQKrkbD/team3.jpg"
+    }
+]

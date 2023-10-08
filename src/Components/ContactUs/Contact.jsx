@@ -17,7 +17,7 @@ const Contact = () => {
           Contact Us
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div data-aos="fade-up-right" className="bg-white  rounded-3xl shadow-2xl mx-auto p-10">
+          <div data-aos="fade-up-right" className="bg-white w-80 rounded-3xl shadow-2xl mx-auto p-10">
             <p className="mx-auto w-1/4 text-[#FF9B96] text-3xl mb-5">
               <FaLocationDot></FaLocationDot>
             </p>
@@ -29,7 +29,7 @@ const Contact = () => {
               Dhaka, Bangladesh
             </p>
           </div>
-          <div  data-aos="zoom-out" className="bg-white rounded-3xl shadow-2xl mx-auto p-10">
+          <div  data-aos="zoom-out" className="bg-white w-80 rounded-3xl shadow-2xl mx-auto p-10">
             <p className="mx-auto w-1/4 text-[#FF9B96] text-3xl mb-5">
               <AiOutlineMail></AiOutlineMail>
             </p>
@@ -43,7 +43,7 @@ const Contact = () => {
               <span className="text-[#FCB41E]"> e@management.com </span>
             </p>
           </div>
-          <div  data-aos="zoom-out-up" className="bg-white  rounded-3xl shadow-2xl mx-auto p-10">
+          <div  data-aos="zoom-out-up" className="bg-white w-80 rounded-3xl shadow-2xl mx-auto p-10">
             <p className="mx-auto w-1/4 text-[#FF9B96] text-3xl mb-5">
               <BsClock></BsClock>
             </p>
@@ -54,7 +54,7 @@ const Contact = () => {
               Monday – Friday <br /> 8.00 am – 5.00 pm <br /> Weekend Closed
             </p>
           </div>
-          <div data-aos="fade-up-left" className="bg-white  rounded-3xl shadow-2xl mx-auto p-10 ">
+          <div data-aos="fade-up-left" className="bg-white w-80 rounded-3xl shadow-2xl mx-auto p-10 ">
             <p className="mx-auto w-1/4 text-[#FF9B96] text-3xl mb-5">
               <BsCalendarEvent></BsCalendarEvent>
             </p>
