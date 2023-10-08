@@ -12,16 +12,30 @@ const Register = () => {
     const password = form.get("password");
     const photo = form.get("photo");
     const name = form.get("name");
-    console.log(name, photo, email, password);
+    // console.log(name, photo, email, password);
 
-    createUser(email, password)
-      .then((result) => {
-        swal("Congratulations", "Your Registration is Successful", "success");
-      })
-      .catch((error) => {
-        swal("Congratulations", `Your Registration is Failed ${error.message}`, "error");
-      });
-      e.target.reset()
+    if (
+      !/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).{6,}$/.test(password)
+    ) {
+      swal(
+        "OPPS",
+        `Your Password must be...
+         - is less than 6 characters
+        - don't have a capital letter
+        - don't have a special character `,
+        "error"
+      );
+      return;
+    } else {
+      createUser(email, password)
+        .then((result) => {
+          swal("Congratulations", "Your Registration is Successful", "success");
+        })
+        .catch((error) => {
+          swal("OOPS", `Your Registration is Failed ${error.message}`, "error");
+        });
+      e.target.reset();
+    }
   };
   return (
     <div>

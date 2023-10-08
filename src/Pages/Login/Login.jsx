@@ -1,12 +1,32 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
+import swal from "sweetalert";
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-    console.log(email, password);
+    // console.log(email, password);
+    signIn(email, password)
+      .then((result) => {
+        swal("Congratulations", "Your Login is Successful", "success");
+        console.log(result.user);
+      })
+      .catch((error) => {
+        swal(
+          "OOPS",
+          `Your Login is Failed 
+        ${error.message}`,
+          "error"
+        );
+        console.log(error);
+      });
+
+    e.target.reset();
   };
   return (
     <div>

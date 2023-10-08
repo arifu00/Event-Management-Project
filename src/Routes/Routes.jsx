@@ -9,6 +9,7 @@ import ServiceDetail from "../Components/Service/ServiceDetail";
 import OurServices from "../Pages/OurServices/OurServices";
 import Contact from "../Components/ContactUs/Contact";
 import Team from "../Components/Team/Team";
+import PrivateRoute from "./PrivateRoute";
 
 const Routes = createBrowserRouter([
   {
@@ -23,7 +24,11 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/services/:id",
-        element: <ServiceDetail></ServiceDetail>,
+        element: (
+          <PrivateRoute>
+            <ServiceDetail></ServiceDetail>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/services.json"),
       },
       {

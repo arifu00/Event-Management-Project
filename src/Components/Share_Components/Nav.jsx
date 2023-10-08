@@ -1,13 +1,24 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
+import profile from "../../assets/profile.png"
 
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
   const navLinks = (
     <>
       <li className="">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold px-4 py-2 outline rounded-2xl outline-blue-700" : ""
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-green-500 underline font-extrabold px-4 py-2 outline rounded-2xl outline-blue-700"
+              : ""
           }
         >
           Home
@@ -17,7 +28,11 @@ const Nav = () => {
         <NavLink
           to="/ourServices"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold" : ""
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
+              : ""
           }
         >
           Our Services
@@ -27,17 +42,25 @@ const Nav = () => {
         <NavLink
           to="/team"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold" : ""
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
+              : ""
           }
         >
-           About Us
+          About Us
         </NavLink>
       </li>
       <li>
         <NavLink
           to="/contactUs"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold" : ""
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
+              : ""
           }
         >
           Contact Us
@@ -73,7 +96,12 @@ const Nav = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="font-bold text-xl md:text-3xl text-lime-600"><span className="text-2xl md:text-3xl lg:text-4xl text-red-600">E</span>-Management</a>
+          <a className="font-bold text-xl md:text-3xl text-lime-600">
+            <span className="text-2xl md:text-3xl lg:text-4xl text-red-600">
+              E
+            </span>
+            -Management
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="gap-6 menu-horizontal px-1 text-xl font-medium text-slate-950">
@@ -81,14 +109,35 @@ const Nav = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink
-            to="/login"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "text-green-500 underline font-extrabold" : ""
-            }
-          >
-            <a className=" text-xl font-medium text-slate-950">Login</a>
-          </NavLink>
+          {user ? (
+             <>
+             <div className="avatar online">
+               <div className="w-12 mr-4 rounded-full">
+                 <img src={profile} alt={user.name} />
+               </div>
+             </div>
+             <button
+              onClick={handleLogOut}
+              className=" text-xl font-medium text-slate-950"
+            >
+              Log Out
+            </button>
+           </>
+            
+          ) : (
+            <NavLink
+              to="/login"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green-500 underline font-extrabold"
+                  : ""
+              }
+            >
+              <a className=" text-xl font-medium text-slate-950">Login</a>
+            </NavLink>
+          )}
         </div>
       </div>
     </div>
