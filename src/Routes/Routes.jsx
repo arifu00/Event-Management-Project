@@ -10,6 +10,7 @@ import OurServices from "../Pages/OurServices/OurServices";
 import Contact from "../Components/ContactUs/Contact";
 import Team from "../Components/Team/Team";
 import PrivateRoute from "./PrivateRoute";
+import PackageDetail from "../Components/Service/PackageDetail";
 
 const Routes = createBrowserRouter([
   {
@@ -42,7 +43,19 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/contactUs",
-        element: <Contact></Contact>,
+        element: (
+          <PrivateRoute>
+            <Contact></Contact>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/packageDetail",
+        element: (
+          <PrivateRoute>
+            <PackageDetail></PackageDetail>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

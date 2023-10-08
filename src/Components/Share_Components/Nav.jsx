@@ -52,7 +52,9 @@ const Nav = () => {
           About Us
         </NavLink>
       </li>
-      <li>
+      {
+        user? 
+        <li>
         <NavLink
           to="/contactUs"
           className={({ isActive, isPending }) =>
@@ -66,6 +68,28 @@ const Nav = () => {
           Contact Us
         </NavLink>
       </li>
+        :
+        ''
+      }
+      {
+        user? 
+        <li>
+        <NavLink
+          to="/packageDetail"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
+              : ""
+          }
+        >
+          Our Package
+        </NavLink>
+      </li>
+        :
+        ''
+      }
     </>
   );
   return (
