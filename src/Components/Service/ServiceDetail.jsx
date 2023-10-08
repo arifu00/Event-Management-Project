@@ -20,7 +20,7 @@ const ServiceDetail = () => {
 
   return (
     <div>
-      <div className="container mx-auto px-5 mt-12 mb-12">
+      <div className="container mx-auto mt-12 mb-12">
         <div className="relative flex w-full flex-col rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img

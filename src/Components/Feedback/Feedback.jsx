@@ -11,8 +11,8 @@ const Feedback = () => {
 
   return (
     <div>
-      <div className="bg-[#ECF0F2] my-12 px-10 py-16">
-        <div className="container mx-auto ">
+      <div className="bg-[#ECF0F2] ">
+        <div className="container md:mx-auto my-12 md:px-10 py-16 ">
             <h6 className="text-center text-[#1B7261] text-xl font-normal">Our Testimonial</h6>
             <h2 className="text-center text-2xl md:text-3xl lg:text-4xl mt-4 mb-12 font-semibold">Our Client's Feedback</h2>
           <div data-aos="fade-up-right" className="flex flex-col gap-5 md:flex-row justify-around">

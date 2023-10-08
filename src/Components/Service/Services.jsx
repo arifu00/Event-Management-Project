@@ -6,7 +6,7 @@ const Services = () => {
   // console.log(servicesData);
   return (
     <div>
-      <div className="container mx-auto mt-12 px-5">
+      <div className="container md:mx-auto mt-12 px-5">
         <h2 className="text-2xl md:text-4xl font-medium md:font-bold text-center underline text-[#1e2b3a] ">
           Our Services
         </h2>

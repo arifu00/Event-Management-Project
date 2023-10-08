@@ -21,7 +21,7 @@
         "position": "Event Planer",
         "email": "david.johnson@example.com",
         "phone": "+1 (345) 678-9012",
-        "image": "https://i.ibb.co/st8MfT6/team6.jpg"
+        "image": "https://i.ibb.co/VjpCw8x/team1.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,8 @@
         "position": "Marketing Specialist",
         "email": "sarah.brown@example.com",
         "phone": "+1 (456) 789-0123",
-        "image": "https://i.ibb.co/VjpCw8x/team1.jpg"
+        "image": "https://i.ibb.co/st8MfT6/team6.jpg"
+        
     },
     {
         "id": 5,

@@ -12,19 +12,19 @@ const Team = () => {
 
   return (
     <div className="bg-[#F4F4F6]">
-      <div className="container mx-auto px-10 my-12 py-10">
+      <div className="container mx-1 md:mx-auto md:px-10 my-12 py-10">
         <h2 className="text-3xl text-center font-bold underline my-2">
           Our Team
         </h2>
         <h6 className="text-lg font-medium text-center uppercase italic">
           meet our best team
         </h6>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {team.map((teamMember) => (
             <div key={teamMember.id}>
               <div className="">
                 {/* card */}
-                <div className="relative flex w-96 flex-col rounded-xl bg-clip-border text-gray-700 ">
+                <div className="relative flex flex-col rounded-xl bg-clip-border text-gray-700 ">
                   <div className="relative mx-4 mt-4  overflow-hidden rounded-xl  bg-clip-border text-gray-700">
                     <img
                       src={teamMember.image}
