@@ -4,6 +4,15 @@
 
 Click here for the Live repo: [https://event-management-assignm-e9c86.web.app/](https://event-management-assignm-e9c86.web.app/)
 
+
+## features and functionalities of this website
+
+* User registration system has been added.
+* User can login through Google login system.
+* Users can use the website without login. But login can use extra 2 route.
+* Clicking on the card will open the details page.
+* Dynamically loaded data from API.
+
 <div align="center">
   <h1>MCQ TEST</h1>
 </div>
@@ -105,7 +114,8 @@ console.log(sayHi());
 
 #### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>A function is called, which takes one parameter.
+And finally the function is called in console.log, it is showing undefined for not passing any parameters.</i>
 
 </p>
 </details>
@@ -132,9 +142,11 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3....
 
-<i>Write your explanation here</i>
+<i>Here each element of the array is forEach
+  Then 1 is added to count as long as num is true. Finally the value of count is 3.
+</i>
 
 </p>
 </details>

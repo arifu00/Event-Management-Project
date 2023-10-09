@@ -1,14 +1,16 @@
 import { useContext } from "react";
-import { NavLink,  useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from "sweetalert";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, googleSignIn } = useContext(AuthContext);
 
   const location = useLocation();
-  console.log(location);
-  const navigate = useNavigate()
+  // console.log(location);
+  const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -19,7 +21,27 @@ const Login = () => {
       .then((result) => {
         swal("Congratulations", "Your Login is Successful", "success");
         console.log(result.user);
-        navigate(location?. state? location.state :  '/')
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        swal(
+          "OOPS",
+          `Password doesn't match`,
+          "error"
+        );
+        console.log(error);
+      });
+
+    e.target.reset();
+  };
+  // google provider
+  const provider = new GoogleAuthProvider();
+  const handleGoogleLogin = () => {
+    googleSignIn(provider)
+      .then((result) => {
+        swal("Congratulations", "Your Login is Successful", "success");
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         swal(
@@ -28,10 +50,7 @@ const Login = () => {
         ${error.message}`,
           "error"
         );
-        console.log(error);
       });
-
-    e.target.reset();
   };
   return (
     <div>
@@ -93,6 +112,14 @@ const Login = () => {
                 </p>
               </div>
             </form>
+            <div className="text-center mt-3 ">
+              <button
+                onClick={handleGoogleLogin}
+                className="py-4 btn-outline btn-info px-4 text-white text-xl font-semibold rounded-lg  "
+              >
+                Login with google
+              </button>
+            </div>
           </div>
         </div>
       </div>

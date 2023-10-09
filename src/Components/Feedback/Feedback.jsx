@@ -15,7 +15,7 @@ const Feedback = () => {
         <div className="container md:mx-auto my-12 md:px-10 py-16 ">
             <h6 className="text-center text-[#1B7261] text-xl font-normal">Our Testimonial</h6>
             <h2 className="text-center text-2xl md:text-3xl lg:text-4xl mt-4 mb-12 font-semibold">Our Client's Feedback</h2>
-          <div data-aos="fade-up-right" className="flex flex-col gap-5 md:flex-row justify-around">
+          <div data-aos="flip-left" className="flex flex-col gap-5 md:flex-row justify-around">
             <div className="relative flex w-full  flex-col rounded-xl bg-white px-12 py-8 bg-clip-border text-gray-700 shadow-none">
               <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
                 <img
@@ -109,7 +109,7 @@ const Feedback = () => {
                 </p>
               </div>
             </div>
-            <div data-aos="fade-up-left"  className="relative flex bg-white px-12 py-8 w-full  flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
+            <div data-aos="flip-right"  className="relative flex bg-white px-12 py-8 w-full  flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
               <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
                 <img
                   src={user2}

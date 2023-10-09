@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import profile from "../../assets/profile.png"
+import profile from "../../assets/profile.png";
 
 const Nav = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -52,44 +52,42 @@ const Nav = () => {
           About Us
         </NavLink>
       </li>
-      {
-        user? 
+      {user ? (
         <li>
-        <NavLink
-          to="/contactUs"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
-              : ""
-          }
-        >
-          Contact Us
-        </NavLink>
-      </li>
-        :
-        ''
-      }
-      {
-        user? 
+          <NavLink
+            to="/contactUs"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "pending"
+                : isActive
+                ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
+                : ""
+            }
+          >
+            Contact Us
+          </NavLink>
+        </li>
+      ) : (
+        ""
+      )}
+      {user ? (
         <li>
-        <NavLink
-          to="/packageDetail"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
-              : ""
-          }
-        >
-          Our Package
-        </NavLink>
-      </li>
-        :
-        ''
-      }
+          <NavLink
+            to="/packageDetail"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "pending"
+                : isActive
+                ? "text-green-500 underline px-4 py-2 outline rounded-2xl outline-blue-700 font-extrabold"
+                : ""
+            }
+          >
+            Our Package
+          </NavLink>
+        </li>
+      ) : (
+        ""
+      )}
     </>
   );
   return (
@@ -134,20 +132,24 @@ const Nav = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-             <>
-             <div className="avatar online">
-               <div className="w-12 mr-4 rounded-full">
-                 <img src={profile} alt={user.name} />
-               </div>
-             </div>
-             <button
-              onClick={handleLogOut}
-              className=" text-xl font-medium text-slate-950"
-            >
-              Log Out
-            </button>
-           </>
-            
+            <>
+              <div className="">
+                <div className="avatar online">
+                  <div className="w-12 mr-4 rounded-full">
+                    <img
+                      src={user?.photoURL || profile}
+                      alt={user.displayName}
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={handleLogOut}
+                className=" text-xl font-medium text-slate-950"
+              >
+                Log Out
+              </button>
+            </>
           ) : (
             <NavLink
               to="/login"
@@ -163,6 +165,11 @@ const Nav = () => {
             </NavLink>
           )}
         </div>
+      </div>
+      <div className="text-center text-base pb-5 font-bold">
+      {user?.displayName && (
+    `Welcome ${user.displayName}!! Have a nice day.`
+  )}
       </div>
     </div>
   );

@@ -4,7 +4,8 @@ import PackageDetail from "./PackageDetail";
 
 const ServiceDetail = () => {
   const [details, setDetails] = useState({});
-  const { img, title } = details;
+  console.log(details);
+  const { img, title, long_detail } = details;
 
   const { id } = useParams();
   // console.log(id);
@@ -48,11 +49,16 @@ const ServiceDetail = () => {
             </button>
           </div>
           <div className="p-6">
-            <div className="mb-3">
+            <div className="mb-6">
               <h5 className="block  text-xl md:text-2xl lg:text-4xl font-medium leading-snug tracking-normal text-blue-gray-900 antialiased">
                 {title}
               </h5>
-              <h6 className="text-xl md:text-2xl lg:text-4xl font-medium text-center underline my-10">
+              <p className="text-base font-normal">
+                {long_detail}
+              </p>
+            </div>
+            <div className="mt-7">
+            <h6 className="text-xl md:text-2xl lg:text-4xl font-medium text-center underline my-10">
                 Our Package
               </h6>
             </div>
