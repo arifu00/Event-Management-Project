@@ -9,13 +9,13 @@ const PackageDetails = () => {
       .then((res) => res.json())
       .then((data) => setPackageList(data));
   }, []);
-  console.log(packageList);
+  // console.log(packageList);
 
   return (
     <div>
       {/* pack */}
-      <div className="  mt-8  flex flex-wrap items-center  justify-center  ">
-        <div className="flex flex-col sm:flex-col lg:flex-row xl:flex-row my-20 md:flex-row justify-center items center  container w-9/12   ">
+      <div className="  my-12  flex flex-wrap items-center  justify-center  ">
+        <div className="flex flex-col sm:flex-col lg:flex-row xl:flex-row  md:flex-row justify-center items center  container w-9/12   ">
           {/* first pack  */}
           <div className="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full  sm:w-full bg-white z-30">
             <h1 className="text-gray-500 font-semibold text-xl ">Normal</h1>

@@ -3,6 +3,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from "sweetalert";
 import { GoogleAuthProvider } from "firebase/auth";
+import { BsGoogle } from "react-icons/bs";
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);
@@ -24,11 +25,7 @@ const Login = () => {
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        swal(
-          "OOPS",
-          `Password doesn't match`,
-          "error"
-        );
+        swal("OOPS", `Password doesn't match`, "error");
         console.log(error);
       });
 
@@ -112,13 +109,16 @@ const Login = () => {
                 </p>
               </div>
             </form>
-            <div className="text-center mt-3 ">
-              <button
-                onClick={handleGoogleLogin}
-                className="py-4 btn-outline btn-info px-4 text-white text-xl font-semibold rounded-lg  "
-              >
-                Login with google
-              </button>
+            <div className="text-center flex justify-center mt-3 ">
+              <div className="">
+                <button
+                  onClick={handleGoogleLogin}
+                  className="py-4 flex gap-2 items-center btn-outline btn-info px-4 text-white text-xl font-semibold rounded-lg  "
+                >
+                 <BsGoogle></BsGoogle> Login with google
+                </button>
+                
+              </div>
             </div>
           </div>
         </div>
