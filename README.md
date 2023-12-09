@@ -5,6 +5,16 @@
 Click here for the Live repo: [https://event-management-assignm-e9c86.web.app/](https://event-management-assignm-e9c86.web.app/)
 
 
+## 🎯 Using Technology
+
+### Frontend :
+- React js
+- Firebase (Authentication)
+- Java Script
+- Tailwind Css
+- Meterial Tailwind / Daisy UI
+ 
+
 ## features and functionalities of this website
 
 * User registration system has been added.
